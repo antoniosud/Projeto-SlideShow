@@ -18,7 +18,7 @@
 .container-items {
     position: absolute;
     display: flex;
-    width: 50vw;
+    width: 0vw;
     height: 50vh;
     border-radius: 10px;
     overflow: hidden;
@@ -55,4 +55,35 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s;
+}
+
+@media(max-width:740px){
+    .container-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 85vh;
+        background-color: black;
+        margin: 9vh 9vw;
+        border-radius: 10px;
+        box-shadow: 0 20px 30px black;
+        border: 5px solid black;
+    }
+    
+    .container-items {
+        position: absolute;
+        display: flex;
+        width: 0vw;
+        height: 50vh;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .item {
+        width: 50vw;
+        height: 50vh;
+        transition: all 1s;
+    }
+
 }
